@@ -1,0 +1,37 @@
+[package]
+name = "pandoc_filter"
+version = "0.1.0"
+authors = ["rloic <rouquette.loic@gmail.com>"]
+
+[[bin]]
+name = "acronyms"
+src = "src/acronyms.rs"
+
+[[bin]]
+name = "minted"
+src = "src/minted.rs"
+
+[[bin]]
+name = "input"
+src = "src/input.rs"
+
+[[bin]]
+name = "include"
+src = "src/include.rs"
+
+[[bin]]
+name = "cross_reference"
+src = "src/cross_reference.rs"
+
+[[bin]]
+name = "theorems"
+src = "src/theorems"
+
+[[bin]]
+name = "centering_pictures"
+src = "src/centering_pictures"
+
+[dependencies]
+serde = { version = "1.0.130", features = ["derive"] }
+serde_json = "1.0.68"
+tera = "1.13.0"
